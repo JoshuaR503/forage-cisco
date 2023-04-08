@@ -1,7 +1,7 @@
 export default function Banner({title}) {
     return (
         <div className="banner">
-            <h1>{title}</h1>
+            <h2 className="display-3 fw-bold">{title}</h2>
         </div>
     )
 }

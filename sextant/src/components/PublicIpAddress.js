@@ -30,7 +30,7 @@ const PublicIpAddress = ({ type }) => {
 
     return (
         <div>
-            <h2>Public IP Address ({type}):</h2>
+            <h3>Public IP Address ({type}):</h3>
             <p>{ipAddress}</p>
         </div>
     );

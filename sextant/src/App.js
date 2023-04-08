@@ -1,15 +1,16 @@
 import './App.css';
 import Banner from './components/Banner';
 import Exhibit from './components/Exhibit';
+import LatencyComponent from './components/Latency';
 import PublicIpAddress from './components/PublicIpAddress';
 
 function App() {
   return (
     <div >
-      <Exhibit title={"Sextant"}>
-        <Banner title={"Public IP addresses:"} />
+      <Exhibit title={"Sextant by Cisco"}>
 
-        <div className="row py-5">
+        <Banner title={"Public IP addresses:"} />
+        <div className="row py-3">
           <div className="col-6">
             <PublicIpAddress type="v4" />
           </div>
@@ -17,8 +18,13 @@ function App() {
           <div className="col-6">
             <PublicIpAddress type="v6" />
           </div>
-
         </div>
+
+        <Banner title={"Packet latency:"} />
+        <div className="row py-3">
+          <LatencyComponent/>
+        </div>
+
       </Exhibit>
     </div>
   );
